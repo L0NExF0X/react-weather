@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <div className="main-info">
         <h1>
-          {props.data.city}, {props.data.country}
+          {props.data.city} <span className="fs-4">{props.data.country}</span>
         </h1>
         <DateAndTime date={props.data.date} />
         <h3>{props.data.description}</h3>
