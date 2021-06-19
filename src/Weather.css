@@ -1,4 +1,5 @@
 .Weather .main-info h1 {
+  font-size: 40px;
   margin: 0 auto;
 }
 
@@ -17,7 +18,6 @@
 }
 
 .Weather .icon {
-  display: inline-flex;
   width: 150px;
   position: relative;
   bottom: 20px;
@@ -44,5 +44,46 @@
 }
 
 .Weather li {
+  font-size: 16px;
   list-style: none;
+}
+
+@media (max-width: 767px) {
+  .Weather .main-info h1 {
+    font-size: 34px;
+  }
+  .Weather .current-weather {
+    text-align: center;
+  }
+  .Weather .weather-conditions {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .Weather .main-info h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+  .Weather .main-info h2 {
+    font-size: 20px;
+  }
+  .Weather .main-info h3 {
+    font-size: 16px;
+  }
+  .Weather .icon {
+    width: 100px;
+  }
+  .Weather .temperature {
+    font-size: 64px;
+  }
+  .Weather .units-main {
+    font-size: 18px;
+  }
+  .Weather .search-bar {
+    margin-bottom: 15px;
+  }
+  .Weather .weather-conditions {
+    margin-top: 0;
+  }
 }

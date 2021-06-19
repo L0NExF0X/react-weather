@@ -1,5 +1,6 @@
 import React from "react";
 import DateAndTime from "./DateAndTime";
+import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherInfo(props) {
   return (
@@ -12,18 +13,17 @@ export default function WeatherInfo(props) {
         <h3>{props.data.description}</h3>
       </div>
       <div className="row mt-3">
-        <div className="col-sm-6">
-          <img
-            className="icon"
-            src={props.data.icon}
-            alt={props.data.description}
-          />
-          <span className="temperature">{props.data.temperature}</span>
-          <span className="units-main">
-            <a href="/">°F </a>|<a href="/">°C</a>
-          </span>
+        <div className="col-sm-6 text-nowrap">
+          <div className="current-weather">
+            <img
+              className="icon"
+              src={props.data.icon}
+              alt={props.data.description}
+            />
+            <WeatherTemp fahrenheit={props.data.temperature} />
+          </div>
         </div>
-        <div className="col-6">
+        <div className="col-sm-6">
           <ul className="weather-conditions">
             <li>Feels like: {props.data.feelsLike}</li>
             <li>Humidity: {props.data.humidity}%</li>

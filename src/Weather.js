@@ -30,7 +30,7 @@ export default function Weather(props) {
       feelsLike: Math.round(response.data.main.feels_like),
       humidity: response.data.main.humidity,
       icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      temperature: Math.round(response.data.main.temp),
+      temperature: response.data.main.temp,
       wind: Math.round(response.data.wind.speed),
     });
   }
@@ -43,7 +43,7 @@ export default function Weather(props) {
             placeholder="🔎 Search for a City"
             autoFocus="on"
             autoComplete="off"
-            className="form-control bg-dark text-light"
+            className="search-bar form-control bg-dark text-light"
             onChange={updateCity}
           />
         </div>
@@ -51,14 +51,14 @@ export default function Weather(props) {
           <input
             type="submit"
             value="Search"
-            className="form-control btn btn-primary submit-button"
+            className="form-control btn btn-outline-info submit-button"
           />
         </div>
         <div className="col">
           <input
             type="submit"
             value="Current"
-            className="form-control submit-button"
+            className="form-control btn btn-outline-secondary submit-button"
           />
         </div>
       </div>

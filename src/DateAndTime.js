@@ -23,13 +23,20 @@ export default function DateAndTime(props) {
     hours = hours - 12;
     return (
       <h2>
-        Last updated: {day} {hours}:{minutes} PM
+        Last updated:{" "}
+        <span className="fw-normal">
+          {day} {hours}:{minutes} PM
+        </span>
       </h2>
     );
   } else {
     return (
       <h2>
-        Last updated: {day} {hours}:{minutes} AM
+        {" "}
+        Last updated:
+        <span className="fw-normal">
+          {day} {hours}:{minutes} AM
+        </span>
       </h2>
     );
   }

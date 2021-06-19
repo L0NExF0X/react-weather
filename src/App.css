@@ -6,3 +6,9 @@
   max-width: 780px;
   padding: 24px;
 }
+
+@media (max-width: 576px) {
+  .App {
+    padding: 16px;
+  }
+}
