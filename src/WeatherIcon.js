@@ -44,7 +44,7 @@ export default function WeatherIcon(props) {
     "02n": (
       <WiNightAltCloudy
         size={props.size}
-        color="#1fa6c1"
+        color="#9854ad"
         className={props.className}
       />
     ),
@@ -63,66 +63,66 @@ export default function WeatherIcon(props) {
     "09d": (
       <WiDayShowers
         size={props.size}
-        color="#0dcaf0"
+        color="#90dde5"
         className={props.className}
       />
     ),
     "09n": (
       <WiNightAltShowers
         size={props.size}
-        color="#0dcaf0"
+        color="#90dde5"
         className={props.className}
       />
     ),
-    "010d": (
+    "10d": (
       <WiDayRain
         size={props.size}
-        color="#0dcaf0"
+        color="#bbb0c1"
         className={props.className}
       />
     ),
-    "010n": (
+    "10n": (
       <WiNightAltRain
         size={props.size}
-        color="#0dcaf0"
+        color="#bbb0c1"
         className={props.className}
       />
     ),
-    "011d": (
+    "11d": (
       <WiDayThunderstorm
         size={props.size}
-        color="#0dcaf0"
+        color="#978f9b"
         className={props.className}
       />
     ),
-    "011n": (
+    "11n": (
       <WiNightAltThunderstorm
         size={props.size}
-        color="#0dcaf0"
+        color="#978f9b"
         className={props.className}
       />
     ),
-    "013d": (
+    "13d": (
       <WiSnowflakeCold
         size={props.size}
-        color="#0dcaf0"
+        color="#c6edf2"
         className={props.className}
       />
     ),
-    "013n": (
+    "13n": (
       <WiSnowflakeCold
         size={props.size}
-        color="#0dcaf0"
+        color="#c6edf2"
         className={props.className}
       />
     ),
-    "050d": (
-      <WiDayFog size={props.size} color="#0dcaf0" className={props.className} />
+    "50d": (
+      <WiDayFog size={props.size} color="#c6c4c6" className={props.className} />
     ),
-    "050n": (
+    "50n": (
       <WiNightFog
         size={props.size}
-        color="#9f9da0"
+        color="#c6c4c6"
         className={props.className}
       />
     ),
