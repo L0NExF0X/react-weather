@@ -62,6 +62,14 @@
   .WeatherInfo .weather-conditions {
     text-align: center;
   }
+  .WeatherInfo .big-icon {
+    height: 80px;
+    width: 80px;
+  }
+  .WeatherForecastDay .small-icon {
+    height: 64px;
+    width: 64px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -75,12 +83,9 @@
   .WeatherInfo .main-info h3 {
     font-size: 16px;
   }
-  .WeatherInfo .big-icon {
-    height: 80px;
-    width: 80px;
-  }
   .WeatherInfo .weather-conditions {
     margin-top: 0;
+    margin-bottom: 10px;
   }
   .WeatherTemp .temperature {
     font-size: 64px;
@@ -89,11 +94,7 @@
     font-size: 18px;
   }
   .DateAndTime h2,
-  .WeatherForecast h4 {
+  .WeatherForecastDay h4 {
     font-size: 20px;
-  }
-  .WeatherForecast .small-icon {
-    height: 64px;
-    width: 64px;
   }
 }
