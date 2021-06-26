@@ -1,89 +1,99 @@
-.Weather .main-info h1 {
+.WeatherInfo .main-info h1 {
   font-size: 40px;
   margin: 0 auto;
 }
 
-.Weather .main-info h2 {
-  font-size: 24px;
-  margin: 0 auto;
-}
-
-.Weather .main-info h3 {
+.WeatherInfo .main-info h3 {
   font-size: 22px;
   font-weight: 400;
 }
 
-.Weather .main-info h3:first-letter {
+.WeatherInfo .main-info h3:first-letter {
   text-transform: capitalize;
 }
 
-.Weather .icon {
-  width: 150px;
+.WeatherInfo .big-icon {
   position: relative;
   bottom: 20px;
 }
 
-.Weather .temperature {
+.WeatherInfo ul {
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.WeatherInfo li {
+  font-size: 16px;
+  list-style: none;
+}
+
+.WeatherTemp .temperature {
   font-size: 70px;
   font-weight: 500;
 }
 
-.Weather .units-main {
+.WeatherTemp .units-main {
   font-size: 22px;
   position: relative;
   bottom: 36px;
 }
 
-.Weather a {
+.WeatherTemp a {
   text-decoration: none;
 }
 
-.Weather ul {
-  margin: 20px 0 0;
-  padding: 0;
+.DateAndTime h2,
+.WeatherForecast h4 {
+  font-size: 24px;
+  margin: 0 auto;
 }
 
-.Weather li {
-  font-size: 16px;
-  list-style: none;
+.WeatherForecast {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
-  .Weather .main-info h1 {
+  .WeatherInfo .main-info h1 {
     font-size: 34px;
   }
-  .Weather .current-weather {
+  .WeatherInfo .current-weather {
     text-align: center;
   }
-  .Weather .weather-conditions {
+  .WeatherInfo .weather-conditions {
     text-align: center;
   }
 }
 
 @media (max-width: 576px) {
-  .Weather .main-info h1 {
-    font-size: 26px;
-    margin-bottom: 5px;
-  }
-  .Weather .main-info h2 {
-    font-size: 20px;
-  }
-  .Weather .main-info h3 {
-    font-size: 16px;
-  }
-  .Weather .icon {
-    width: 100px;
-  }
-  .Weather .temperature {
-    font-size: 64px;
-  }
-  .Weather .units-main {
-    font-size: 18px;
-  }
   .Weather .search-bar {
     margin-bottom: 15px;
   }
-  .Weather .weather-conditions {
+  .WeatherInfo .main-info h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+  .WeatherInfo .main-info h3 {
+    font-size: 16px;
+  }
+  .WeatherInfo .big-icon {
+    height: 80px;
+    width: 80px;
+  }
+  .WeatherInfo .weather-conditions {
     margin-top: 0;
+  }
+  .WeatherTemp .temperature {
+    font-size: 64px;
+  }
+  .WeatherTemp .units-main {
+    font-size: 18px;
+  }
+  .DateAndTime h2,
+  .WeatherForecast h4 {
+    font-size: 20px;
+  }
+  .WeatherForecast .small-icon {
+    height: 64px;
+    width: 64px;
   }
 }

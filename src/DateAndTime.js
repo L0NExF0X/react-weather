@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 
 export default function DateAndTime(props) {
   let days = [
@@ -22,22 +23,25 @@ export default function DateAndTime(props) {
   if (hours > 12) {
     hours = hours - 12;
     return (
-      <h2>
-        Last updated:{" "}
-        <span className="fw-normal">
-          {day} {hours}:{minutes} PM
-        </span>
-      </h2>
+      <span className="DateAndTime">
+        <h2>
+          Last updated:{" "}
+          <span className="fw-normal">
+            {day} {hours}:{minutes} PM
+          </span>
+        </h2>
+      </span>
     );
   } else {
     return (
-      <h2>
-        {" "}
-        Last updated:
-        <span className="fw-normal">
-          {day} {hours}:{minutes} AM
-        </span>
-      </h2>
+      <span className="DateAndTime">
+        <h2>
+          Last updated:
+          <span className="fw-normal">
+            {day} {hours}:{minutes} AM
+          </span>
+        </h2>
+      </span>
     );
   }
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import DateAndTime from "./DateAndTime";
 import WeatherTemp from "./WeatherTemp";
+import WeatherIcon from "./WeatherIcon";
+import "./Weather.css";
 
 export default function WeatherInfo(props) {
   return (
@@ -15,10 +17,10 @@ export default function WeatherInfo(props) {
       <div className="row mt-3">
         <div className="col-sm-6 text-nowrap">
           <div className="current-weather">
-            <img
-              className="icon"
-              src={props.data.icon}
-              alt={props.data.description}
+            <WeatherIcon
+              className="big-icon"
+              code={props.data.icon}
+              size={100}
             />
             <WeatherTemp fahrenheit={props.data.temperature} />
           </div>
